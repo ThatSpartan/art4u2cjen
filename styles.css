@@ -2,6 +2,7 @@
   margin: 0;
   border: 0;
   padding: 0;
+  box-shadow: none;
 }
 
 header {
@@ -9,10 +10,6 @@ header {
   width: 100%;
   background-color: #159957;
   background-image: linear-gradient(120deg, #155799, #159957);
-}
-
-.nav-list {
-
 }
 
 .nav-item {
@@ -32,4 +29,48 @@ header {
   font-weight: 1300;
   color: red;
   cursor: pointer;
+}
+
+.hamburger {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  transition: all 0.25s;
+}
+
+.top-bun, .bottom-bun {
+  display: block;
+  position: absolute;
+  left: 15px;
+  width: 18px;
+  height: 2px;
+  background: #fff;
+  transform: rotate(0);
+  transition: all 0.25s;
+}
+
+.top-bun {
+  top: 23px;
+  transform: translateY(3px);
+}
+
+.bottom-bun {
+  bottom: 23px;
+  transform: translateY(-3px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .top-bun {
+  transform:
+    rotate(45deg)
+    translateY(0px);
+}
+
+.open .bottom-bun {
+  transform:
+    rotate(-45deg)
+    translateY(0px);
 }
