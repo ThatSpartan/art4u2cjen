@@ -1,7 +1,10 @@
+// script for the toggle menu on mobile devices
 $(document).ready( function() {
 
-  $('.hamburger').click (function(){
-    $(this).toggleClass('open');
+  $('.hamburger').click(function() {
+
+      $('.hamburger').toggleClass('nav-open');
+
   });
 
 });
